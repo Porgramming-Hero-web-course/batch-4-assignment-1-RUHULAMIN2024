@@ -15,7 +15,6 @@ function calculateShapeArea(shape: Shape): number {
   if (shape.shape === "circle") {
     return parseFloat((Math.PI * Math.pow(shape.radius, 2)).toFixed(2));
   } else if (shape.shape === "rectangle") {
-    // Area of a rectangle = width * height
     return shape.width * shape.height;
   }
   throw new Error("thikthak input den");
